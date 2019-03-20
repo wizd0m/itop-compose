@@ -1,0 +1,33 @@
+version: '3.3'
+networks:
+  net_lemp:
+services: 
+  apache-php:
+     build:
+        context: ./php
+        dockerfile: Dockerfile
+     image: php:7.1-apache-itop 
+     container_name: LAMP_apache_php
+     restart: always
+     ports:
+        - "80:80"
+     depends_on:
+        - mysql 
+     networks:
+        - net_lemp
+
+  mysql:
+     build:
+        context: ./mysql
+        dockerfile: Dockerfile
+     image: mysql:5.7-itop
+     container_name: LAMP_mysql
+     environment:
+        MYSQL_ROOT_PASSWORD: password             
+     restart: always
+     ports:
+        - "3306:3306"
+     volumes:
+        - ./database:/var/lib/mysql:rw
+     networks: 
+        - net_lemp

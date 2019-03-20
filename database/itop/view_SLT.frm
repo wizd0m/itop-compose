@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select distinct `_slt`.`id` AS `id`,`_slt`.`name` AS `name`,`_slt`.`priority` AS `priority`,`_slt`.`request_type` AS `request_type`,`_slt`.`metric` AS `metric`,`_slt`.`value` AS `value`,`_slt`.`unit` AS `unit`,cast(concat(coalesce(`_slt`.`name`,\'\')) as char charset utf8mb4) AS `friendlyname` from `itop`.`slt` `_slt` where 1
+md5=db63714e3ce6b601bbd6271b8fce317e
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=%
+suid=2
+with_check_option=0
+timestamp=2019-03-07 12:20:08
+create-version=1
+source=SELECT DISTINCT `_slt`.`id` AS `id`, `_slt`.`name` AS `name`, `_slt`.`priority` AS `priority`, `_slt`.`request_type` AS `request_type`, `_slt`.`metric` AS `metric`, `_slt`.`value` AS `value`, `_slt`.`unit` AS `unit`, CAST(CONCAT(COALESCE(`_slt`.`name`, \'\')) AS CHAR) AS `friendlyname` FROM `slt` AS `_slt` WHERE 1
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_unicode_ci
+view_body_utf8=select distinct `_slt`.`id` AS `id`,`_slt`.`name` AS `name`,`_slt`.`priority` AS `priority`,`_slt`.`request_type` AS `request_type`,`_slt`.`metric` AS `metric`,`_slt`.`value` AS `value`,`_slt`.`unit` AS `unit`,cast(concat(coalesce(`_slt`.`name`,\'\')) as char charset utf8mb4) AS `friendlyname` from `itop`.`slt` `_slt` where 1
