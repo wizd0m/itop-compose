@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select distinct `Software`.`id` AS `id`,`Software`.`name` AS `name`,`Software`.`vendor` AS `vendor`,`Software`.`version` AS `version`,`Software`.`type` AS `type`,cast(concat(coalesce(`Software`.`name`,\'\'),coalesce(\' \',\'\'),coalesce(`Software`.`version`,\'\')) as char charset utf8mb4) AS `friendlyname` from `itop27`.`software` `Software` where 1
+md5=4c1ad48ca618c90bdcd0a260bec73282
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=%
+suid=2
+with_check_option=0
+timestamp=2020-05-02 08:14:54
+create-version=1
+source=SELECT\n DISTINCT `Software`.`id` AS `id`,\n `Software`.`name` AS `name`,\n `Software`.`vendor` AS `vendor`,\n `Software`.`version` AS `version`,\n `Software`.`type` AS `type`,\n CAST(CONCAT(COALESCE(`Software`.`name`, \'\'), COALESCE(\' \', \'\'), COALESCE(`Software`.`version`, \'\')) AS CHAR) AS `friendlyname`\n FROM \n   `software` AS `Software`\n WHERE 1
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_unicode_ci
+view_body_utf8=select distinct `Software`.`id` AS `id`,`Software`.`name` AS `name`,`Software`.`vendor` AS `vendor`,`Software`.`version` AS `version`,`Software`.`type` AS `type`,cast(concat(coalesce(`Software`.`name`,\'\'),coalesce(\' \',\'\'),coalesce(`Software`.`version`,\'\')) as char charset utf8mb4) AS `friendlyname` from `itop27`.`software` `Software` where 1

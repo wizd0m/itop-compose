@@ -28,7 +28,7 @@ RUN set -eux; \
 	    && rm -rf /var/lib/apt/lists/* \
 		&& rm -rf /var/www/html/* \
 		&& mkdir -p /tmp/itop \
-		&& wget --no-check-certificate -O /tmp/itop/itop.zip https://sourceforge.net/projects/itop/files/itop/2.6.0/iTop-2.6.0-4294.zip \
+		&& wget --no-check-certificate -O /tmp/itop/itop.zip https://sourceforge.net/projects/itop/files/itop/2.7.0-1/iTop-2.7.0-1-5541.zip \
 		&& unzip /tmp/itop/itop.zip -d /tmp/itop/ \
 		&& mv /tmp/itop/web/* /var/www/html/ \
 		&& chown -R www-data:www-data /var/www/html \

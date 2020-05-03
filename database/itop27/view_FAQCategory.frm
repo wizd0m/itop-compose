@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select distinct `FAQCategory`.`id` AS `id`,`FAQCategory`.`nam` AS `name`,cast(concat(coalesce(`FAQCategory`.`nam`,\'\')) as char charset utf8mb4) AS `friendlyname` from `itop27`.`faqcategory` `FAQCategory` where 1
+md5=2b3a45a2bedc7c1bcd9b3270b7ce9f3a
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=%
+suid=2
+with_check_option=0
+timestamp=2020-05-02 08:14:55
+create-version=1
+source=SELECT\n DISTINCT `FAQCategory`.`id` AS `id`,\n `FAQCategory`.`nam` AS `name`,\n CAST(CONCAT(COALESCE(`FAQCategory`.`nam`, \'\')) AS CHAR) AS `friendlyname`\n FROM \n   `faqcategory` AS `FAQCategory`\n WHERE 1
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_unicode_ci
+view_body_utf8=select distinct `FAQCategory`.`id` AS `id`,`FAQCategory`.`nam` AS `name`,cast(concat(coalesce(`FAQCategory`.`nam`,\'\')) as char charset utf8mb4) AS `friendlyname` from `itop27`.`faqcategory` `FAQCategory` where 1
